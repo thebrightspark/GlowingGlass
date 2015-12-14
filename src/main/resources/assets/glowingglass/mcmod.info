@@ -1,0 +1,17 @@
+[
+{
+  "modid": "GlowingGlass",
+  "name": "Glowing Glass",
+  "description": "A small mod which adds glowing variants of the vanilla glass.",
+  "version": "$version",
+  "mcversion": "$mcversion",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["bright_spark"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "parent": "",
+  "dependencies": []
+}
+]
