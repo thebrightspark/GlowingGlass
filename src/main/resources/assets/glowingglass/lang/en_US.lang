@@ -2,3 +2,19 @@
 
 tile.glowingGlass.name=Glowing Glass
 tile.glowingStainedGlass.name=Glowing Stained Glass
+tile.glowingStainedGlass.black.name=Glowing Black Stained Glass
+tile.glowingStainedGlass.red.name=Glowing Red Stained Glass
+tile.glowingStainedGlass.green.name=Glowing Green Stained Glass
+tile.glowingStainedGlass.brown.name=Glowing Brown Stained Glass
+tile.glowingStainedGlass.blue.name=Glowing Blue Stained Glass
+tile.glowingStainedGlass.purple.name=Glowing Purple Stained Glass
+tile.glowingStainedGlass.cyan.name=Glowing Cyan Stained Glass
+tile.glowingStainedGlass.silver.name=Glowing Light Gray Stained Glass
+tile.glowingStainedGlass.gray.name=Glowing Gray Stained Glass
+tile.glowingStainedGlass.pink.name=Glowing Pink Stained Glass
+tile.glowingStainedGlass.lime.name=Glowing Lime Stained Glass
+tile.glowingStainedGlass.yellow.name=Glowing Yellow Stained Glass
+tile.glowingStainedGlass.lightBlue.name=Glowing Light Blue Stained Glass
+tile.glowingStainedGlass.magenta.name=Glowing Magenta Stained Glass
+tile.glowingStainedGlass.orange.name=Glowing Orange Stained Glass
+tile.glowingStainedGlass.white.name=Glowing White Stained Glass

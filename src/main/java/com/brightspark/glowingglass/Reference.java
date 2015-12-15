@@ -1,7 +1,5 @@
 package com.brightspark.glowingglass;
 
-import net.minecraft.init.Blocks;
-
 public class Reference
 {
     public static final String MOD_ID = "GlowingGlass";
