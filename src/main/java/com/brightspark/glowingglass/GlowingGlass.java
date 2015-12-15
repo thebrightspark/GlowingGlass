@@ -40,7 +40,7 @@ public class GlowingGlass
         GameRegistry.addRecipe(new ItemStack(blockGlowingGlass), new Object[]{" x ", "xgx", " x ", 'x', Items.glowstone_dust, 'g', Blocks.glass});
         for(int i = 0; i <= 15; ++i)
         {
-            //GameRegistry.addRecipe(new ItemStack(GGBlocks.blockGlowingGlass), new Object[]{" x ", "xgx", " x ", 'x', Items.glowstone_dust, 'g', new ItemStack(Blocks.stained_glass, 1, i)});
+            GameRegistry.addRecipe(new ItemStack(blockGlowingStainedGlass, 1, i), new Object[]{" x ", "xgx", " x ", 'x', Items.glowstone_dust, 'g', new ItemStack(Blocks.stained_glass, 1, i)});
         }
     }
 
