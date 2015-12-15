@@ -5,9 +5,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockGlass;
-import net.minecraft.block.BlockStainedGlass;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -23,7 +21,10 @@ public class GlowingGlass
 
     //Blocks
     public static Block blockGlowingGlass = new BlockGlass(Material.glass, false).setHardness(0.3F).setStepSound(Block.soundTypeGlass).setBlockName(Reference.BLOCK_GLASS).setBlockTextureName("glass").setLightLevel(1.0f).setCreativeTab(GGCreativeTab.GG_TAB);
-    public static Block blockGlowingStainedGlass = new BlockGGStained();
+    public static Block blockGlowingStainedGlass = new BlockStainedGlass(Material.glass).setHardness(0.3F).setStepSound(Block.soundTypeGlass).setBlockName(Reference.BLOCK_STAINED_GLASS).setBlockTextureName("glass").setLightLevel(1.0f).setCreativeTab(GGCreativeTab.GG_TAB);
+    public static Block blockGlowingGlassPane = new BlockGGPane();
+    public static Block blockGlowingStainedGlassPane = new BlockStainedGlassPane().setHardness(0.3F).setStepSound(Block.soundTypeGlass).setBlockName(Reference.BLOCK_STAINED_GLASS_PANE).setBlockTextureName("glass").setLightLevel(1.0f).setCreativeTab(GGCreativeTab.GG_TAB);
+
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
@@ -31,6 +32,8 @@ public class GlowingGlass
         //Block/Item Registry
         GameRegistry.registerBlock(blockGlowingGlass, Reference.BLOCK_GLASS);
         GameRegistry.registerBlock(blockGlowingStainedGlass, ItemBlockGGStained.class, Reference.BLOCK_STAINED_GLASS);
+        GameRegistry.registerBlock(blockGlowingGlassPane, Reference.BLOCK_GLASS_PANE);
+        GameRegistry.registerBlock(blockGlowingStainedGlassPane, ItemBlockGGStainedPane.class, Reference.BLOCK_STAINED_GLASS_PANE);
     }
 
     @Mod.EventHandler
@@ -41,6 +44,7 @@ public class GlowingGlass
         for(int i = 0; i <= 15; ++i)
         {
             GameRegistry.addRecipe(new ItemStack(blockGlowingStainedGlass, 1, i), new Object[]{" x ", "xgx", " x ", 'x', Items.glowstone_dust, 'g', new ItemStack(Blocks.stained_glass, 1, i)});
+            GameRegistry.addRecipe(new ItemStack(blockGlowingStainedGlassPane, 16, i), new Object[]{"xxx", "xxx", 'x', new ItemStack(blockGlowingStainedGlass, 1, i)});
         }
     }
 

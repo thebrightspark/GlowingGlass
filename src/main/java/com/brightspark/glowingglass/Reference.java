@@ -8,4 +8,6 @@ public class Reference
 
     public static final String BLOCK_GLASS = "glowingGlass";
     public static final String BLOCK_STAINED_GLASS = "glowingStainedGlass";
+    public static final String BLOCK_GLASS_PANE = "glowingGlassPane";
+    public static final String BLOCK_STAINED_GLASS_PANE = "glowingStainedGlassPane";
 }
