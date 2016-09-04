@@ -8,6 +8,6 @@ public class ItemBlockGGStained extends ItemCloth
     public ItemBlockGGStained(Block block)
     {
         super(block);
-        setUnlocalizedName(Reference.BLOCK_STAINED_GLASS);
+        setUnlocalizedName("glowingStainedGlass");
     }
 }

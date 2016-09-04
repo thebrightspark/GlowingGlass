@@ -14,8 +14,7 @@ public class BlockGGPane extends BlockPane
         super("glass", "glass_pane_top", Material.glass, false);
         setHardness(0.3F);
         setStepSound(Block.soundTypeGlass);
-        setBlockName(Reference.BLOCK_GLASS_PANE);
         setLightLevel(1.0f);
-        setCreativeTab(GGCreativeTab.GG_TAB);
+        setCreativeTab(GlowingGlass.GG_TAB);
     }
 }
